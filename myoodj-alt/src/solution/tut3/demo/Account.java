@@ -6,7 +6,7 @@ package solution.tut3.demo;
  * 
  * 	Demo: Transform the given Account class in UML to the Java class...
  *	
- *	Modifier/visibility: public, private, protected, package-private (default)
+ *	Modifier/visibility/accessibility: public, private, protected, package-private (default)
  *	
  *	OOP: Encapsulation -> private/protected
  */
@@ -22,6 +22,11 @@ public class Account extends Object
 		//purpose	: 	construct/instantiate/create/make the object instance of the class
 		//task		:	initialise values to the instance members of the object
 	public Account() {} //no-arg constructor
+	
+	//overloaded contructor
+//	public Account( int id ) {
+//		this.id = id;
+//	}
 	
 	//operation-compartment
 	public int getId() {
@@ -64,7 +69,7 @@ public class Account extends Object
 	@Override
 	public String toString() {
 		String header = " \n>>> Account >>> \n";
-		return header + this.getId() + ":" + this.getBalance();
+		return header + this.getId() + ": " + this.getBalance();
 	}
 	
 }

@@ -24,8 +24,9 @@ public class App {
 		
 		//scenario: we're required to make an account object called savings account;
 		//savings account object
-		Account savings = new Account(); //Account() is a constructor method-call...
-		savings.setId(1222);
+		Account savings = new Account(); //empty object; //Account() is a constructor method-call...
+		//Account savings = new Account( 1222 ); //id is set upon object instantiation...
+		//savings.setId(1222);
 		savings.setBalance(20000);
 		savings.setAnnualInterestRate(0.0045);
 		System.out.println( savings );
