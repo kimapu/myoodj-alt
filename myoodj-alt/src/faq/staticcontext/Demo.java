@@ -24,7 +24,7 @@ public class Demo {
 						 //without static keyword, the member belongs to the object instance	
 		//constant				:	final
 
-	//static context can be applied the member of the class
+	//static context can be applied to the member of the class
 		//member refer to the data or operation
 	
 	//operation or method
