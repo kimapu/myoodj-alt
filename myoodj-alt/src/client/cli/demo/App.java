@@ -9,7 +9,8 @@ import solution.tut3.demo.Account;
 
 public class App { 
 
-	//Scanner   
+	//Scanner 
+	
 	static Scanner scan = new Scanner( System.in ); //capture user-input
 	
 	public static void main(String[] args) {
