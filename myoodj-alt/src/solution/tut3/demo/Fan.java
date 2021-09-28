@@ -65,7 +65,7 @@ public class Fan {
 
 	@Override
 	public String toString() {
-		return "Fan [speed=" + speed + ", on=" + on + ", radius=" + radius + ", color=" + color + "]";
+		return "Fan [speed=" + getSpeed() + ", on=" + on + ", radius=" + radius + ", color=" + color + "]";
 	}
 
 }
