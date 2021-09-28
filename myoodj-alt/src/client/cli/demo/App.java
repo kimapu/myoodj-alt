@@ -1,10 +1,12 @@
 package client.cli.demo;
 
+import java.awt.Color;
 import java.util.Scanner;
 
 import solution.tut2.demo.Converter;
 import solution.tut2.demo.Cylinder;
 import solution.tut3.demo.Account;
+import solution.tut3.demo.Fan;
 import solution.tut3.demo.Rectangle;
 
 public class App { 
@@ -18,7 +20,16 @@ public class App {
 		//tstConverter();
 		//tstCylinder();   
 		//runAccount();
-		runRectangle();
+		//runRectangle();
+		runFan();
+	}
+	
+	static void runFan() {
+		Fan f1 = new Fan(3);
+		f1.setRadius(10);
+		f1.setColor(Color.DARK_GRAY);
+		f1.setOn(true);
+		System.out.println( f1 );
 	}
 	
 	static void runRectangle() {
