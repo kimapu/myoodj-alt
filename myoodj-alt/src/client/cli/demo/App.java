@@ -1,11 +1,11 @@
 package client.cli.demo;
 
-
 import java.util.Scanner;
 
 import solution.tut2.demo.Converter;
 import solution.tut2.demo.Cylinder;
 import solution.tut3.demo.Account;
+import solution.tut3.demo.Rectangle;
 
 public class App { 
 
@@ -17,7 +17,27 @@ public class App {
 		
 		//tstConverter();
 		//tstCylinder();   
-		runAccount();
+		//runAccount();
+		runRectangle();
+	}
+	
+	static void runRectangle() {
+		
+		double w = 5, h = 50;
+		String color = "yellow";
+		
+		//instanstiate objects for Rectangle
+		//invoking no-arg constructor, Rectangle()
+		Rectangle r1 = new Rectangle(); //empty-object
+		r1.setWidth(w);
+		r1.setheight(h);
+		Rectangle.setColor(color);
+		System.out.println( r1 );
+		
+		//invoking overloaded-constructor, Rectangle(double, double, String)
+		Rectangle r2 = new Rectangle( w, h, color );
+		System.out.println( r2 );
+		
 	}
 	
 	static void runAccount() {
@@ -26,7 +46,7 @@ public class App {
 		//savings account object
 		Account savings = new Account(); //empty object; //Account() is a constructor method-call...
 		//Account savings = new Account( 1222 ); //id is set upon object instantiation...
-		//savings.setId(1222);
+		savings.setId(1222);
 		savings.setBalance(20000);
 		savings.setAnnualInterestRate(0.0045);
 		System.out.println( savings );
