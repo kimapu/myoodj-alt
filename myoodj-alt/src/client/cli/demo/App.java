@@ -29,7 +29,7 @@ public class App {
 		//instanstiate objects for Rectangle
 		//invoking no-arg constructor, Rectangle()
 		Rectangle r1 = new Rectangle(); //empty-object
-		r1.setWidth(w);
+		r1.setWidth(w); 
 		r1.setheight(h);
 		Rectangle.setColor(color);
 		System.out.println( r1 );
