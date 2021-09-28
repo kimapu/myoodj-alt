@@ -14,7 +14,6 @@ public class Fan {
 	}
 
 	public Fan(int speed, boolean on, double radius, Color color) {
-		super();
 		this.speed = speed;
 		this.on = on;
 		this.radius = radius;
@@ -31,7 +30,7 @@ public class Fan {
 			speedWord = "MEDIUM";
 			break;
 		case 3: 
-			speedWord = "HIGH";
+			speedWord = "FAST";
 			break;
 		
 		default:
