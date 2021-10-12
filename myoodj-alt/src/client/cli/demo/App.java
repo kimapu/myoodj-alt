@@ -8,6 +8,9 @@ import solution.tut2.demo.Cylinder;
 import solution.tut3.demo.Account;
 import solution.tut3.demo.Fan;
 import solution.tut3.demo.Rectangle;
+import solution.tut6.demo.GeneralAccount;
+import solution.tut6.demo.Savings;
+import solution.tut6.demo.Checking;
 
 public class App { 
 
@@ -21,7 +24,27 @@ public class App {
 		//tstCylinder();   
 		//runAccount();
 		//runRectangle();
-		runFan();
+		//runFan();
+		
+		runAccountClassHierarchy();
+		
+	}
+	
+	static void runAccountClassHierarchy() {
+		//declare-account
+		GeneralAccount acc = null;
+		
+		/**
+		 * Test with Savings account
+		 */
+		acc = new Savings();
+		acc.setNumber(123456789);
+		acc.setBalance(20000);
+		acc.setAnnualInterestRate(0.005);
+		
+		System.out.println( "Account info >>>" );
+		System.out.println( "Balance: "+acc.getBalance() );
+		
 	}
 	
 	static void runFan() {
