@@ -45,6 +45,14 @@ public class App {
 		System.out.println( "Account info >>>" );
 		System.out.println( "Balance: "+acc.getBalance() );
 		
+		System.out.println( "\nTransaction >>> deposit(100)" );
+		//in case without overriding feature, this method is being defined in GeneralAccount class so it invoked.
+		//otherwise, the specific method in Savings class invoked...
+		acc.deposit(100); 
+		System.out.println( "\nAccount info >>>" );
+		System.out.println( "Balance: "+acc.getBalance() );
+		
+		
 	}
 	
 	static void runFan() {
