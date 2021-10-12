@@ -35,6 +35,25 @@ public class App {
 		GeneralAccount acc = null;
 		
 		/**
+		 * Test with Checking account
+		 */
+		acc = new Checking();
+		acc.setNumber(987654321);
+		acc.setBalance(1000);
+		acc.setAnnualInterestRate(0.05);
+		
+		System.out.println( "Account info >>>" );
+		System.out.println( "Balance: "+acc.getBalance() );
+		
+		System.out.println( "\nTransaction >>> withdraw(1050)" );
+		acc.withdraw(1050);
+		
+		System.out.println( "\nAccount info >>>" );
+		System.out.println( "Balance: "+acc.getBalance() );
+		
+		
+		System.exit(0);
+		/**
 		 * Test with Savings account
 		 */
 		acc = new Savings();
@@ -49,6 +68,12 @@ public class App {
 		//in case without overriding feature, this method is being defined in GeneralAccount class so it invoked.
 		//otherwise, the specific method in Savings class invoked...
 		acc.deposit(100); 
+		System.out.println( "\nAccount info >>>" );
+		System.out.println( "Balance: "+acc.getBalance() );
+		
+		System.out.println( "\nTransaction >>> withdraw(500)" );
+		acc.withdraw(500);
+		
 		System.out.println( "\nAccount info >>>" );
 		System.out.println( "Balance: "+acc.getBalance() );
 		
