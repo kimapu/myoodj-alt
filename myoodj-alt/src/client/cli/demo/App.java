@@ -51,7 +51,6 @@ public class App {
 		System.out.println( "\nAccount info >>>" );
 		System.out.println( "Balance: "+acc.getBalance() );
 		
-		
 		System.exit(0);
 		/**
 		 * Test with Savings account
