@@ -1,6 +1,7 @@
 package client.cli.demo;
 
 import java.awt.Color;
+import java.time.LocalDate;
 import java.util.Scanner;
 
 import solution.tut2.demo.Converter;
@@ -8,9 +9,12 @@ import solution.tut2.demo.Cylinder;
 import solution.tut3.demo.Account;
 import solution.tut3.demo.Fan;
 import solution.tut3.demo.Rectangle;
-import solution.tut6.demo.GeneralAccount;
-import solution.tut6.demo.Savings;
 import solution.tut6.demo.Checking;
+import solution.tut6.demo.GeneralAccount;
+import solution.tut6.demo.MyDate;
+import solution.tut6.demo.Savings;
+import solution.tut6.demo.Status;
+import solution.tut6.demo.Student;
 
 public class App { 
 
@@ -26,8 +30,14 @@ public class App {
 		//runRectangle();
 		//runFan();
 		
-		runAccountClassHierarchy();
+		//runAccountClassHierarchy();
 		
+		//tstStudent();
+	
+	}
+	
+	static void tstStudent() {
+		Student std1 = new Student( Status.JUNIOR );
 	}
 	
 	static void runAccountClassHierarchy() {
@@ -45,8 +55,8 @@ public class App {
 		System.out.println( "Account info >>>" );
 		System.out.println( "Balance: "+acc.getBalance() );
 		
-		System.out.println( "\nTransaction >>> withdraw(1050)" );
-		acc.withdraw(1050);
+		System.out.println( "\nTransaction >>> withdraw(1150)" );
+		acc.withdraw(1150);
 		
 		System.out.println( "\nAccount info >>>" );
 		System.out.println( "Balance: "+acc.getBalance() );
