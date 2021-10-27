@@ -1,7 +1,6 @@
 package client.cli.demo;
 
 import java.awt.Color;
-import java.time.LocalDate;
 import java.util.Scanner;
 
 import solution.tut2.demo.Converter;
@@ -11,10 +10,10 @@ import solution.tut3.demo.Fan;
 import solution.tut3.demo.Rectangle;
 import solution.tut6.demo.Checking;
 import solution.tut6.demo.GeneralAccount;
-import solution.tut6.demo.MyDate;
 import solution.tut6.demo.Savings;
 import solution.tut6.demo.Status;
 import solution.tut6.demo.Student;
+import solution.tut6.q2.Circle;
 
 public class App { 
 
@@ -30,10 +29,22 @@ public class App {
 		//runRectangle();
 		//runFan();
 		
-		runAccountClassHierarchy();
+		//runAccountClassHierarchy();
 		
 		//tstStudent();
+		
+		tstCircle();
 	
+	}
+	
+	static void tstCircle() {
+		
+		System.out.println(">>> Test Circle objects");
+		int r1 = 7, r2 = 10;
+		Circle c1 = new Circle(r1);
+		Circle c2 = new Circle(r2);
+		System.out.println( c1.max(c2) );
+		
 	}
 	
 	static void tstStudent() {
