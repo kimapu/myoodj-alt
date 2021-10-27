@@ -30,7 +30,7 @@ public class App {
 		//runRectangle();
 		//runFan();
 		
-		//runAccountClassHierarchy();
+		runAccountClassHierarchy();
 		
 		//tstStudent();
 	
@@ -56,7 +56,7 @@ public class App {
 		System.out.println( "Balance: "+acc.getBalance() );
 		
 		System.out.println( "\nTransaction >>> withdraw(1150)" );
-		acc.withdraw(1150);
+		acc.withdraw(1050);
 		
 		System.out.println( "\nAccount info >>>" );
 		System.out.println( "Balance: "+acc.getBalance() );
