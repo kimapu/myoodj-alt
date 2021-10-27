@@ -6,7 +6,7 @@ public class MovableCircle implements Movable {
 	private MovablePoint center;
 	
 	public MovableCircle( int x, int y, int xSpeed, int ySpeed, int radius ) {
-		center = new MovablePoint( x, y, xSpeed, ySpeed ); //aggregation rel
+		center = new MovablePoint( x, y, xSpeed, ySpeed ); //composition rel
 		this.radius = radius;
 	}
 
