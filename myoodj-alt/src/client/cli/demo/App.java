@@ -33,7 +33,7 @@ public class App {
 		
 		//tstStudent();
 		
-		tstCircle();
+		//tstCircle();
 	
 	}
 	
