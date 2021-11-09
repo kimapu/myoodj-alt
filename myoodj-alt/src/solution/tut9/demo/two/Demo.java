@@ -20,7 +20,7 @@ public class Demo {
 		}
 		
 		//write-to-file
-		writeTo( arr, new File("src/solution/tut9/demo/two/ints.txt") );
+		writeTo( arr, new File( Global.contextPath+"ints.txt") );
 	}
 	
 	public static void main(String[] args) {
@@ -44,7 +44,7 @@ public class Demo {
 		/**
 		 * BufferredReader
 		 */
-		try( BufferedReader in = new BufferedReader( new FileReader("src/solution/tut9/demo/two/"+fileName) );	 ) {
+		try( BufferedReader in = new BufferedReader( new FileReader( Global.contextPath+fileName) );	 ) {
 			
 			String line;
 			while( (line = in.readLine() ) != null ) {
@@ -64,7 +64,7 @@ public class Demo {
 		try( PrintWriter out = new PrintWriter( new FileWriter(path) ); ) {
 			
 			for (int i = 0; i < arr.length; i++) {
-				out.println( arr[i] ); //write-operation
+				out.println( String.valueOf(arr[i]).substring(0, 2) ); //write-operation
 			}
 			
 		} catch (Exception e) {
