@@ -1,4 +1,4 @@
-package solution.tut10.q1;
+package solution.tut10.q1n2;
 
 import java.io.DataOutputStream;
 import java.io.FileOutputStream;

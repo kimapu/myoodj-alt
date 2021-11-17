@@ -1,4 +1,4 @@
-package solution.tut10.q1;
+package solution.tut10.q1n2;
 /**
  * Inheritance concept
  * 	Parent class
@@ -19,7 +19,5 @@ public class IO {
 	protected String getFileName() {
 		return fileName;
 	}
-	
-	
 	
 }

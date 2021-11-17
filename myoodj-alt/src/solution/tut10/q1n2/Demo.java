@@ -1,11 +1,10 @@
-package solution.tut10.q1;
+package solution.tut10.q1n2;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Random;
 
 public class Demo {
-
 
 	public static void main(String[] args) {
 		
@@ -16,7 +15,7 @@ public class Demo {
 	}
 	
 	static void tst2() {
-		String path = "src/solution/tut10/q1/";
+		String path = "src/solution/tut10/q1n2/";
 		String fileName = path+"binaryints.bin";
 		
 		File file = new File(fileName);
@@ -28,9 +27,12 @@ public class Demo {
 			}else {
 				BinaryReader br = new BinaryReader(fileName);
 				int[] ints = br.read();
+				int sum = 0;
 				for (int i : ints) {
+					sum+=i;
 					System.out.print( i + " ");
 				}
+				System.out.println( "\nSum: "+ sum );
 			}
 			
 		} catch (FileNotFoundException e) {
@@ -47,7 +49,7 @@ public class Demo {
 			arr[i] = new Random().nextInt(100); //create rand 0-100
 		}
 		//write 
-		String path = "src/solution/tut10/q1/";
+		String path = "src/solution/tut10/q1n2/";
 		String fileName = path+"binaryints.bin";
 		
 		BinaryWriter bw = new BinaryWriter(fileName);
