@@ -13,6 +13,7 @@ public abstract class DAO {
 	
 	public abstract List<String> readAll();
 	
-	public abstract void write( String record );
+	public abstract void write( String record, boolean append );
 
+	public abstract void modify( List<String> newLst );
 }

@@ -31,9 +31,9 @@ public class TextDAO extends DAO {
 	}
 
 	@Override
-	public void write( String record ) {
+	public void write( String record, boolean append ) {
 
-		try( PrintWriter out = new PrintWriter( new FileWriter(super.file, true) ); ) {
+		try( PrintWriter out = new PrintWriter( new FileWriter(super.file, append) ); ) {
 				out.println( record );
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -41,4 +41,14 @@ public class TextDAO extends DAO {
 
 	}
 
+	@Override
+	public void modify(List<String> newLst) {
+		try (PrintWriter out = new PrintWriter(new FileWriter(super.file));) {
+			for (String newLine : newLst) {
+				out.println( newLine );
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 }
